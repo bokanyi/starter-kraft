@@ -12,15 +12,72 @@
 /* Core CSS required for Ionic components to work properly */
 @import "@ionic/angular/css/core.css";
 
+html {
+    font-family: var(--ion-font-family);
+  } 
+
+
+p{
+    font-size: 2em;
+}
+
+h1{
+    font-size: 6em;
+    line-height: 0.8em ;
+}
+
+h2{
+    font-size: 3em;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+h4{
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+
+ion-button,
+ion-fab-button {
+    --background: var(--ion-color-dark);
+    --background-hover: var(--ion-color-danger);
+    --background-activated: var(--ion-color-danger);
+    --background-focused: var(--ion-color-secondary);
+
+    // --color: blue;
+  
+    --border-radius: 0;
+    // --border-color: #000;
+    // --border-style: solid;
+    // --border-width: 1px;
+    --border-hover: red ;
+    
+    
+    --box-shadow: none;
+   
+    // --box-shadow: 5px 5px 0px 0px rgb(0, 0, 0);
+  }
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
 /* Basic CSS for apps built with Ionic */
-@import "@ionic/angular/css/normalize.css";
-@import "@ionic/angular/css/structure.css";
-@import "@ionic/angular/css/typography.css";
-@import '@ionic/angular/css/display.css';
+// @import "@ionic/angular/css/normalize.css";
+// @import "@ionic/angular/css/structure.css";
+// @import "@ionic/angular/css/typography.css";
+// @import '@ionic/angular/css/display.css';
 
 /* Optional CSS utils that can be commented out */
-@import "@ionic/angular/css/padding.css";
-@import "@ionic/angular/css/float-elements.css";
-@import "@ionic/angular/css/text-alignment.css";
-@import "@ionic/angular/css/text-transformation.css";
-@import "@ionic/angular/css/flex-utils.css";
+// @import "@ionic/angular/css/padding.css";
+// @import "@ionic/angular/css/float-elements.css";
+// @import "@ionic/angular/css/text-alignment.css";
+// @import "@ionic/angular/css/text-transformation.css";
+// @import "@ionic/angular/css/flex-utils.css";

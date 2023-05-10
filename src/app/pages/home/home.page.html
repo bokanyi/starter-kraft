@@ -1,0 +1,71 @@
+
+
+<ion-content [fullscreen]="true" >
+  <!-- <app-menu></app-menu> -->
+
+  <ion-card class="container" color="warning">
+
+    <ion-text >
+
+      <h1>{{title}}</h1>
+      <p>{{introduction}}</p>
+      <div class="buttoncontainer">
+
+        <ion-button size="large"> <h4>Kapcsolat </h4></ion-button>
+      </div>
+    </ion-text>
+  
+  </ion-card>
+
+  <ion-card class="container services" color="success">
+    <h1>
+      Szolgáltatás
+    </h1>
+    <ion-grid >
+      <ion-row *ngFor="let service of services">
+        <ion-col>
+          <h2>
+
+            {{service.title}}
+          </h2>
+        </ion-col>
+        <ion-col >
+          <ion-text >
+            <p>
+
+              {{service.description}}
+            </p>
+          </ion-text>
+        </ion-col>
+      </ion-row>
+      
+     </ion-grid>
+  </ion-card>
+
+  <ion-card class="container"  color="black">
+    <h1>Rólunk</h1>
+    <p>{{about}}</p>
+    <div>
+
+      <ion-button size="large" > <h4>Rólunk </h4></ion-button>
+    </div>
+  </ion-card>
+
+  <ion-card class="container" color="danger">
+    <h1>Kapcsolat</h1>
+    <p>
+      email: emailcím
+    </p>
+    <p>
+      tel: telefonszám
+    </p>
+    <p>
+      Hungary
+      irányítószám Budapest
+      utca
+    </p>
+
+  </ion-card>
+
+  
+</ion-content>

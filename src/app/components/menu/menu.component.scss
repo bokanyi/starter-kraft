@@ -1,0 +1,35 @@
+
+
+.menu{
+    // display: flex;
+    position: fixed;
+    // align-items: center;
+    gap: 2em;
+    // justify-content: space-between;
+    top: 10%;
+    right: 10%;
+}
+
+.logo{
+ 
+    position: fixed;
+    top: 10%;
+    left: 10%;
+}
+
+ion-fab-button {
+    // display: flex;
+    // flex: end;
+    // width: 800px;
+    --border-radius: 0;
+}
+
+ion-button{
+    // color-scheme: var(--dark);
+}
+
+
+
+.menuButton{
+    // width: 500px;
+}
