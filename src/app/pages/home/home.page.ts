@@ -9,8 +9,8 @@ import {Service} from '../../models/models';
 })
 export class HomePage implements OnInit{
   logo: string =  'VKV architectural starter kit'
-  title: string =  'hello mi egy építész szolgáltatást nyújtó vállakozás vagyunk'
-  introduction: string = 'segítünk építészeti tanácsadásban, felmérésben, koncepció alkotásban,ingatlanvásárás, bővítés vagy felújítás előtt állóknak, hogy megtalálja álmai otthonát. 1 mit szolgáltatunk, 2 kiknek, célközönség, 3 mi a cél ' 
+  title: string =  'hello, mi egy építészeti tanácsadással foglalkozó iroda vagyunk'
+  introduction: string = 'felmérés, műszaki helyzetelemzés és az ingatlan építészeti lehetőségeinek feltárása, tanácsadás' 
 
   services: Service[] = [
     {

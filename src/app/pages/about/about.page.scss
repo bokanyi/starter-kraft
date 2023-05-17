@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+    // height: 100vh;
+    padding: 12em;
+    gap: 2em;
+    border: none; 
+    box-shadow: none; 
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .values{
+    display: flex;
+    // flex-direction: row;
+    // align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2em;
+    ion-card{
+        max-width: 300px;
+        // border: 1em solid black;
+        // box-shadow: 1em 1em black;
+        flex:  2 1 auto;
+    }
+  }

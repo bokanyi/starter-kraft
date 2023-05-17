@@ -1,34 +1,14 @@
 .container {
   display: flex;
   flex-direction: column;
-  // align-items: center;
   justify-content: center;
   height: 100vh;
   padding: 10em;
   gap: 2em;
-  border: none; 
-  box-shadow: none; 
+  // border: none; 
+  // box-shadow: none; 
   margin: 0;
-  // transition: background-color 2s,  2s;
-}
-
-
-// .container p {
-//   font-size: 16px;
-//   line-height: 22px;
-
-//   // color: .8c8c8c;
-
-//   margin: 0;
-// }
-
-// .container a {
-//   text-decoration: none;
-// }
-
-.services {
-  text-decoration: none;
-  // background: #88F4A7;
+  // border-radius: 0;
 }
 
 h4:hover::before {

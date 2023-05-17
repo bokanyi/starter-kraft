@@ -3,7 +3,7 @@
 <ion-content [fullscreen]="true" >
   <!-- <app-menu></app-menu> -->
 
-  <ion-card class="container" color="warning">
+  <ion-card class="container" color="black">
 
     <ion-text >
 
@@ -11,7 +11,7 @@
       <p>{{introduction}}</p>
       <div class="buttoncontainer">
 
-        <ion-button size="large"> <h4>Kapcsolat </h4></ion-button>
+        <ion-button color="danger" size="large"> <h4>Kapcsolat </h4></ion-button>
       </div>
     </ion-text>
   
@@ -25,7 +25,6 @@
       <ion-row *ngFor="let service of services">
         <ion-col>
           <h2>
-
             {{service.title}}
           </h2>
         </ion-col>
@@ -47,7 +46,7 @@
     <p>{{about}}</p>
     <div>
 
-      <ion-button size="large" > <h4>Rólunk </h4></ion-button>
+      <ion-button color="danger" size="large" > <h4>Rólunk </h4></ion-button>
     </div>
   </ion-card>
 
