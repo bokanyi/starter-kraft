@@ -1,83 +1,56 @@
-
-
-<ion-content [fullscreen]="true" >
-  <!-- <app-menu></app-menu> -->
+<ion-content [fullscreen]="true">
 
   <ion-card class="container" color="black">
-
-    <ion-text >
-
+    <ion-text>
       <h1>{{title}}</h1>
+      <h3>{{mission}}</h3>
       <p>{{introduction}}</p>
       <div class="buttoncontainer">
-
-        <ion-button color="danger" size="large"> <h4>Kapcsolat </h4></ion-button>
+        <ion-button color="danger" size="large"> <h4>Kapcsolat</h4></ion-button>
       </div>
     </ion-text>
-  
   </ion-card>
 
   <ion-card class="container services" color="success">
-    <h1>
-      Szolgáltatás
-    </h1>
-    <ion-grid >
+    <h1>Szolgáltatás</h1>
+    <ion-grid>
       <ion-row *ngFor="let service of services">
         <ion-col>
-          <h2>
-            {{service.title}}
-          </h2>
+          <h2>{{service.title}}</h2>
         </ion-col>
-        <ion-col >
-          <ion-text >
-            <p>
-
-              {{service.description}}
-            </p>
+        <ion-col>
+          <ion-text>
+            <p>{{service.description}}</p>
           </ion-text>
         </ion-col>
       </ion-row>
-      
-     </ion-grid>
+    </ion-grid>
   </ion-card>
 
-  <ion-card class="container"  color="black">
+  <ion-card class="container" color="black">
     <h1>Rólunk</h1>
-    <div style="display: flex; align-items: center; gap: 2em;">
-
+    <div style="display: flex; align-items: center; gap: 2em">
       <p>{{about}}</p>
-      <div style="background: var(--ion-color-primary)  ; filter: opacity(100%);" >
-
+      <div style="background: var(--ion-color-primary); filter: opacity(100%)">
         <ion-img
-          
-          style=" background: var(--ion-color-primary)  ; filter: grayscale(100%) brightness(0.6) opacity(50%) contrast(2);"
+          style="
+            background: var(--ion-color-primary);
+            filter: grayscale(100%) brightness(0.6) opacity(50%) contrast(2);
+          "
           src="../../../assets/images/hands-engineer.jpg"
         >
         </ion-img>
       </div>
     </div>
     <div>
-
-      <ion-button color="danger" size="large" > <h4>Rólunk </h4></ion-button>
-      
+      <ion-button color="danger" size="large"> <h4>Rólunk</h4></ion-button>
     </div>
   </ion-card>
 
   <ion-card class="container" color="danger">
     <h1>Kapcsolat</h1>
-    <p>
-      email: emailcím
-    </p>
-    <p>
-      tel: telefonszám
-    </p>
-    <p>
-      Hungary
-      irányítószám Budapest
-      utca
-    </p>
-
+    <p>email: emailcím</p>
+    <p>tel: telefonszám</p>
+    <p>Hungary irányítószám Budapest utca</p>
   </ion-card>
-
-  
 </ion-content>
