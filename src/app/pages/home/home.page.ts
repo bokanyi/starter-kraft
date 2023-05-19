@@ -16,14 +16,17 @@ export class HomePage implements OnInit{
     {
       title: 'tananácsadás',
       description: 'Rövid leírás az egyes szolgáltatásokról, mit nyújt, kinek ajánljuk, miért vegyék igénybe',
+      details: "",
     },
     {
       title: 'felmérés',
       description: 'Rövid leírás az egyes szolgáltatásokról, mit nyújt, kinek ajánljuk, miért vegyék igénybe',
+      details: "",
     },
     {
       title: 'koncepció',
       description: 'Rövid leírás az egyes szolgáltatásokról, mit nyújt, kinek ajánljuk, miért vegyék igénybe',
+      details: "",
     },
   ]
 

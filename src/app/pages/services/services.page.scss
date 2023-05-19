@@ -19,10 +19,21 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 2em;
-    ion-card{
-        max-width: 400px;
+    counter-reset: number;
+    .card{
+        max-width: 500px;
         // border: 1em solid black;
         // box-shadow: 1em 1em black;
         flex:  2 1 auto;
+        position: relative;
+    }
+    .card::before{
+      counter-increment: number;
+      content: "0" counter(number) ;
+      font-size: 2em;
+      font-weight: 900;
+      position: absolute;
+      left: -2em;
+      top: 2em;
     }
   }

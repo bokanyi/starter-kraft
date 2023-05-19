@@ -7,20 +7,33 @@
 
     <h1>Mi a szolgáltatás?</h1>
     <div id="services">
-  
-      <div class="services">
-  
-        <ion-card color="inherit" *ngFor="let service of services">
-            <ion-text >
-              <h2>
-                {{service.title}}
-              </h2>
-                <p>
       
-                  {{service.description}}
-                </p>
+      <div class="services">
+
+        
+        <app-card class="card" *ngFor="let service of services"
+        [title]="service.title"
+        [description]="service.description"
+        [details]="service.details"
+        
+        ></app-card>
+
+        <!-- <ion-card color="inherit" *ngFor="let service of services">
+          
+          <ion-text >
+            <h2>
+              {{service.title}}
+            </h2>
+            <p>
+              
+              {{service.description}}
+            </p>
+            <ion-button (click)="openModal()" color="secondary">+</ion-button>
+                <hr>
+                <p *ngIf="modal"> {{service.details}}</p> 
+
               </ion-text>
-         </ion-card>
+         </ion-card> -->
   
   
       </div>

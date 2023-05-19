@@ -13,15 +13,19 @@ export class AboutPage implements OnInit {
   values: Service[] = [
     {title: "átláthatóság",
     description: "Biztos`tjuk a folyamatok átláthatóságát, az első konzultáció során tisztázzuk a lehetőségeket",
+    details:"",
     },
     {title: "elhivatottság",
     description: "Biztos`tjuk a folyamatok átláthatóságát, az első konzultáció során tisztázzuk a lehetőségeket",
+    details:"",
     },
     {title: "csapatmunka",
     description: "Biztos`tjuk a folyamatok átláthatóságát, az első konzultáció során tisztázzuk a lehetőségeket",
+    details:"",
     },
     {title: "minőség",
     description: "Biztos`tjuk a folyamatok átláthatóságát, az első konzultáció során tisztázzuk a lehetőségeket",
+    details:"",
     },
   ]
 

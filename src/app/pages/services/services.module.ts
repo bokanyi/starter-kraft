@@ -7,14 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { ServicesPageRoutingModule } from './services-routing.module';
 
 import { ServicesPage } from './services.page';
-// import { MenuComponent } from 'src/app/components/menu/menu.component';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ServicesPageRoutingModule
+    ServicesPageRoutingModule,
+    ComponentsModule,
   ],
   declarations: [ServicesPage]
 })

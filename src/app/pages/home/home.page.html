@@ -43,10 +43,23 @@
 
   <ion-card class="container"  color="black">
     <h1>Rólunk</h1>
-    <p>{{about}}</p>
+    <div style="display: flex; align-items: center; gap: 2em;">
+
+      <p>{{about}}</p>
+      <div style="background: var(--ion-color-primary)  ; filter: opacity(100%);" >
+
+        <ion-img
+          
+          style=" background: var(--ion-color-primary)  ; filter: grayscale(100%) brightness(0.6) opacity(50%) contrast(2);"
+          src="../../../assets/images/hands-engineer.jpg"
+        >
+        </ion-img>
+      </div>
+    </div>
     <div>
 
       <ion-button color="danger" size="large" > <h4>Rólunk </h4></ion-button>
+      
     </div>
   </ion-card>
 

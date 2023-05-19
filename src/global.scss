@@ -41,7 +41,12 @@ h4{
     font-size: 1.2em;
     font-weight: 700;
 }
-
+hr{
+    border: none;
+    border-top: 1px solid black;
+    height: 5px;
+    box-shadow: none;
+}
 
 ion-button,
 ion-fab-button {
