@@ -1,60 +1,33 @@
-
-
 <ion-content [fullscreen]="true">
   <ion-card class="container" color="primary">
-
-    <ion-text >
-
+    <ion-text>
       <h1>{{title}}</h1>
       <p>{{introduction}}</p>
-     
+      <p>{{mission}}</p>
     </ion-text>
-  
+
     <div class="values">
-
       <ion-card color="inherit" *ngFor="let value of values">
-          <ion-text >
-            <h2>
-              {{value.title}}
-            </h2>
-              <p>
-    
-                {{value.description}}
-              </p>
-            </ion-text>
-       </ion-card>
-
-
+        <ion-text>
+          <h2>{{value.title}}</h2>
+          <p>{{value.description}}</p>
+        </ion-text>
+      </ion-card>
     </div>
-
-    
-    
   </ion-card>
-  
-    <ion-card  class="container" color="secondary">
 
+  <ion-card class="container" color="secondary">
+    <div style="width: 100%; display: flex; justify-content: space-between">
+      <div
+        style="width: 300px; height: 400px; background: var(--ion-color-danger)"
+      >
+        profilkép :)
+      </div>
 
-      <div style=" width: 100%; display: flex;  justify-content: space-between;" >
-        
-        <div style="width: 300px; height:400px; background: var(--ion-color-danger);">
-          profilkép :)
-         </div>
-   
-        <ion-text >
-          <h2>
-            Vizi Kata Veronika
-          </h2>
-            <p>
-  
-              okleveles építészmérnök 
-            </p>
-          </ion-text>
-        </div>
-    </ion-card>
-    
-
-
-      
-
-
+      <ion-text>
+        <h2>Vizi Kata Veronika</h2>
+        <p>okleveles építészmérnök</p>
+      </ion-text>
+    </div>
+  </ion-card>
 </ion-content>

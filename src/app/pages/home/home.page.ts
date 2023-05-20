@@ -10,23 +10,23 @@ import {Service} from '../../models/models';
 export class HomePage implements OnInit{
   logo: string =  'VKV architectural starter kit'
   title: string =  'hello, mi egy építészeti tanácsadással foglalkozó iroda vagyunk'
-  mission: string = ' Missziónk bátorítani az építettőket stb. Minimalizáljuk az ismeretlen részleteket, hogy minél több információ birtokában hozhass döntést új ingatlan vásárlásakor, vagy otthonod bővítése során.'
+  mission: string = 'Missziónk bátorítani az építettőket azzal, hogy minimalizáljuk az ismeretlen részleteket. Így minél több információ birtokában felkészítünk a magabiztos döntéshozásra új ingatlan vásárlásakor, vagy otthonod bővítése során.'
   introduction: string = 'Helyszíni felmérést, műszaki helyzetelemzést és az ingatlan építészeti lehetőségeinek feltárását, építészeti tanácsadást vállalunk + építészeti tervek elkészítését' 
 
   services: Service[] = [
     {
-      title: 'tananácsadás',
-      description: 'Rövid leírás az egyes szolgáltatásokról, mit nyújt, kinek ajánljuk, miért vegyék igénybe',
-      details: "",
-    },
-    {
       title: 'felmérés',
-      description: 'Rövid leírás az egyes szolgáltatásokról, mit nyújt, kinek ajánljuk, miért vegyék igénybe',
+      description: 'A műszaki állapotfelmérés helyszíni bejárás során történik. A helyszíni bejárás alkalmával elvégezzük a különböző épületszerkezetek bontás nélkül végezhető vizsgálatát, a rendelkezésre álló tervlapok áttekintését. Fotódokumentációt és kézi lézeres felmérést készítünk. Bizonyos esetekben statikus szakmérnök bevonását is biztosítjuk.',
       details: "",
     },
     {
-      title: 'koncepció',
-      description: 'Rövid leírás az egyes szolgáltatásokról, mit nyújt, kinek ajánljuk, miért vegyék igénybe',
+      title: 'építészeti tanácsadás',
+      description: 'Az építészeti tanácsadás magában foglalja a tulajdonosi elképzelések és igények feltérképezését, a településrendezési eszközök vizsgálatát, az ingatlanhoz rendelhető építészeti lehetőségek rövid ismertetését.',
+      details: "",
+    },
+    {
+      title: 'koncepcióterv',
+      description: 'A koncepcióterv szemléletesen ábrázolja a tulajdonos megvalósítható elképzeléseit a telek vagy a ház valós paramétereibe illesztve. Megmutatja, hogy az ingatlanon milyen átalakítást kell elvégezni ahhoz, hogy az megfeleljen a tulajdonos, vagy vásárló igényeinek, így a projekt várható költségeire is tudunk közelítő becslést adni.',
       details: "",
     },
   ]

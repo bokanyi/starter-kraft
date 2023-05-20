@@ -5,13 +5,27 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
+@mixin tablet{
+
+  @media(max-width: 768px){
+      @content;
+  }
+}
+
+@mixin mobile {
+
+  @media(max-width: 375px){
+      @content;
+  }
+  
+}
 /** Ionic CSS Variables **/
 :root {
 
   --ion-font-family: 'Philosopher', 'Segoe UI', monospace;
   --ion-font-secondary: 'Josefin Sans', 'Segoe UI', monospace;
   /** primary **/
-  --ion-color-primary: rgb(46, 75, 215);
+  --ion-color-primary: #2e4bd7;
   --ion-color-primary-rgb: 56, 128, 255;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
@@ -51,7 +65,7 @@
   --ion-color-warning-tint: #ffffff;
 
   /** danger **/
-  --ion-color-danger: rgb(249, 70, 70);
+  --ion-color-danger: #f94646;
   // --ion-color-danger: #FF0075;
   --ion-color-danger-rgb: 235, 68, 90;
   --ion-color-danger-contrast: #ffffff;
