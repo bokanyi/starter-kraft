@@ -14,11 +14,12 @@
 
   <ion-card class="container" color="warning">
     <div class="content">
-      <h1>Kinek ajánljuk a szolgáltatásunkat?</h1>
+      <h1>Kinek ajánljuk szolgáltatásunkat?</h1>
 
       <div>
-
-        <h3 class="highlighted" style="font-family: var(--ion-font-secondary)">{{targets}}</h3>
+        <h3 class="highlighted" style="font-family: var(--ion-font-secondary)">
+          {{targets}}
+        </h3>
       </div>
       <p color="inherit" *ngFor="let question of faqs">{{question}}</p>
 
@@ -51,18 +52,10 @@
     <div class="content">
       <h1>Rólunk</h1>
       <div class="">
-        
-      
-          <ion-img class="image"
-            style="
-              /* background: var(--ion-color-primary); */
-              /* filter: grayscale(100%) brightness(0.6) opacity(50%) contrast(2); */
-            "
-            src="../../../assets/images/hands-engineer.jpg"
-          >
-          </ion-img>
-      
-        <p >{{about}}</p>
+        <ion-img class="image" src="../../../assets/images/hands-engineer.jpg">
+        </ion-img>
+
+        <p>{{about}}</p>
       </div>
       <div>
         <ion-button color="primary" size="large" [routerLink]="['/about']">
@@ -90,6 +83,13 @@
       <a href="{{instagram}}" target="_blank"><p>{{instagram}}</p></a>
       <div>
         <p>{{address}}</p>
+      </div>
+      <div>
+        <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10784.916242982283!2d19.0640251!3d47.4854509!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741ddb19c701063%3A0xe1bcb914979cb3f5!2zS8O2emJlbg!5e0!3m2!1shu!2shu!4v1684691490507!5m2!1shu!2shu"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+      
       </div>
     </div>
   </ion-card>

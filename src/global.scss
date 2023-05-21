@@ -44,6 +44,7 @@ p{
 h1{
     font-size: 6em;
     line-height: 0.8em ;
+    margin-bottom: 0.8em;
     @include tablet{
         font-size: 4em;
     } 
@@ -219,17 +220,11 @@ ion-header{
     }
 }
 
-  // .container {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     padding: 12em;
-//     gap: 2em;
-//     border: none; 
-//     box-shadow: none; 
-//     margin: 0;
-//     border-radius: 0;
-//   }
+iframe{
+    width: 100%;
+    filter: grayscale(1);
+}
+
 
 
 /* Basic CSS for apps built with Ionic */

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Service} from '../../models/models';
-
+import { Service } from '../../models/models';
 
 @Component({
   selector: 'app-about',
@@ -8,37 +7,52 @@ import {Service} from '../../models/models';
   styleUrls: ['./about.page.scss'],
 })
 export class AboutPage implements OnInit {
-  title: string =  'Rólunk'
-  introduction: string = 'építészeti tanácsadást nyújtó csapat vagyunk, budapesti lokációval amiben tudunk segíteni' 
-  mission: string = 'Missziónk bátorítani az építettőket azzal, hogy minimalizáljuk az ismeretlen részleteket. Így minél több információ birtokában felkészítünk a magabiztos döntéshozásra új ingatlan vásárlásakor, vagy otthonod bővítése során.'
+  title: string = 'Rólunk';
+  introduction: string =
+    '';
+  mission: string =
+    'Missziónk bátorítani az építettőket azzal, hogy minimalizáljuk az ismeretlen részleteket. Így minél több információ birtokában felkészítünk a magabiztos döntéshozásra új ingatlan vásárlásakor, vagy otthonod bővítése során.';
   sideProject: Service = {
-    title:`MÁJUSFA PROJEKT`,
+    title: `MÁJUSFA PROJEKT`,
     description: `Kisközösségek aktivitását támogató civil kezdeményezésünk Rádler Luca építésszel: MÁJUSFA PROJEKT `,
-    details:'https://www.instagram.com/majusfa_projekt/'
-}
-  
+    details: 'https://www.instagram.com/majusfa_projekt/',
+  };
+
   values: Service[] = [
-    {title: "átláthatóság",
-    description: "Biztos`tjuk a folyamatok átláthatóságát, az első konzultáció során tisztázzuk a lehetőségeket",
-    details:"",
+    {
+      title: 'átláthatóság',
+      description:
+        'Biztosítjuk a folyamatok átláthatóságát, az első konzultáció során tisztázzuk a folyamat lépéseit, megteremtjük a szükséges feltételeket és feltérképezzük a projekt kereteit.',
+      details: '',
     },
-    {title: "elhivatottság",
-    description: "Biztos`tjuk a folyamatok átláthatóságát, az első konzultáció során tisztázzuk a lehetőségeket",
-    details:"",
+    {
+      title: 'elhivatottság',
+      description:
+        'Hiszünk benne, hogy munkánkkal értéket teremtünk, hogy szaktudásunkkal elősegítjük a megfelelő körülmények megteremtését a beruházás legoptimáálisabb kimeneteléhez.',
+      details: '',
     },
-    {title: "csapatmunka",
-    description: "Biztos`tjuk a folyamatok átláthatóságát, az első konzultáció során tisztázzuk a lehetőségeket",
-    details:"",
+    {
+      title: 'minőség',
+      description:
+      'A minőség kiemelkedő szerepet játszik a tervezás folyamatában. A megfelelő cél elérése érdekében a szükséges tervdokumentációt szállítjuk.',
+      details: '',
     },
-    {title: "minőség",
-    description: "Biztos`tjuk a folyamatok átláthatóságát, az első konzultáció során tisztázzuk a lehetőségeket",
-    details:"",
+    {
+      title: 'csapatmunka',
+      description:
+        'Csapatban dolgozunk, projekttől függően társtervezők bevonásával árjük el, hogy minden ismeretlenre rávilágítsunk a beruházás folyamán.  ',
+      details: '',
     },
-  ]
+  ];
 
-  constructor() { }
+  motivation: string[] = [
+    'Építészként azt tapasztalom, hogy az építkezés előtt álló emberek nem jutnak hozzá alapvető információkhoz, tanácstalanul vágnak bele életük nagy beruházásába.',
+    'Nem tudják felmérni az ingatlan állapotát, hogy milyen munkákat kell elvégezni az otthonuk kialakításához, megvalósítható-e az elképzelésük. Így azt sem, hogy mennyit kell rá költeni.',
+    'Vállalkozásommal azoknak szeretnék szolgáltatást nyújtani, akik ingatlanvásárlás előtt állnak vagy meglévő otthonukat szeretnék átalakítani. Hogyan? Helyszíni szemlével, az ingatlan műszaki állapotának felmérésével és a telek beépíthetőségének, vagy az átalakítási lehetőségek vizsgálatával.',
+    'Egy-egy ilyen szakértői alkalommal segítek kiválasztani az ügyfél igényeinek megfelelő lehetőséget, így az is egyértelművé válik, hogy milyen feladatokból áll a projekt és nagyságrendileg mennyibe fog kerülni. A valós műszaki tartalomra hivatkozva akár milliókat alkudhatunk egy ingatlan vételárából, de ami talán még fontosabb, hogy kivitelezőkkel történő kommunikációban is képviselni tudja érdekeit az építtető, átlátja az előtt álló folyamatot.',
+  ];
 
-  ngOnInit() {
-  }
+  constructor() {}
 
+  ngOnInit() {}
 }

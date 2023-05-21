@@ -16,7 +16,7 @@
         </ion-card>
       </div>
 
-      <div>
+      <div class="animated">
         <p>{{sideProject.description}}</p>
         <a href="https://www.instagram.com/majusfa_projekt/" target="_blank">
           <p>{{sideProject.details}}</p>
@@ -28,18 +28,23 @@
   <ion-card class="container" color="secondary">
     <div class="content">
 
-      <div style="width: 100%; display: flex; justify-content: space-between">
+      <div class="grid"
+      >
         <div
-          style="width: 300px; height: 400px; background: var(--ion-color-danger)"
         >
-          profilkép :)
+        <ion-img class="image grid-item"
+           
+        src="../../../assets/images/vkv_nemszerk.png"
+      >
+      </ion-img>
         </div>
   
-        <ion-text>
+        <ion-text class="grid-item" style="text-align:end; margin: auto ;">
           <h2>Vizi Kata Veronika</h2>
-          <p>okleveles építészmérnök</p>
+          <p>építészmérnök</p>
         </ion-text>
       </div>
+      <p color="inherit" *ngFor="let senteces of motivation">{{senteces}}</p>
     </div>
   </ion-card>
 </ion-content>
