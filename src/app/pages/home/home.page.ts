@@ -12,6 +12,11 @@ export class HomePage implements OnInit{
   title: string =  'hello, mi egy építészeti tanácsadással foglalkozó iroda vagyunk'
   mission: string = 'Missziónk bátorítani az építettőket azzal, hogy minimalizáljuk az ismeretlen részleteket. Így minél több információ birtokában felkészítünk a magabiztos döntéshozásra új ingatlan vásárlásakor, vagy otthonod bővítése során.'
   introduction: string = 'Helyszíni felmérést, műszaki helyzetelemzést és az ingatlan építészeti lehetőségeinek feltárását, építészeti tanácsadást vállalunk + építészeti tervek elkészítését' 
+  name: string = "Vizi Kata Veronika"
+  email: string = "kataveronikavizi@gmail.com"
+  tel: string = "06 30 843 07 22" 
+  instagram: string = "https://www.instagram.com/archicare_hu/"
+  address: string =  "Ráday utca 31/B (Kapucsengő/Buzz: 164 - KÖZBEN STÚDIÓ) Budapest IX. kerület 1092"
 
   services: Service[] = [
     {

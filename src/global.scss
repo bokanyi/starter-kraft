@@ -15,7 +15,9 @@
 
 html {
     font-family: var(--ion-font-family);  
+    
   } 
+
 
 *{
     padding: 0;
@@ -112,8 +114,6 @@ ion-card{
 
 .container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     min-height: 100vh;
     padding: 10em;
     gap: 2em;
@@ -132,9 +132,22 @@ ion-card{
     }
     @include mobile{
         padding: 2em;
-        padding-top: 5em;
+        padding-top: 10em;
         height: auto;
     }
+  }
+
+  .content{
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+    margin: auto;
+    // align-items: center;
+    // min-height: 100vh;
+    // padding: 10em;
+    gap: 2em;
   }
 
   .grid{
@@ -143,7 +156,61 @@ ion-card{
     h2{
         
     }
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+    }
+
   }
+.grid-item{
+    padding: 0em 1em;
+}
+ion-header{
+    // max-width: 800px;
+    width: 100vw;
+    display: flex;
+    // flex-direction: column;
+    position: relative;
+    justify-content: center;
+    
+    // align-items: flex-start;
+    padding: 2em 8.8em;
+ 
+    @include mobile{
+        flex-direction: column;
+        gap: 1em;
+        padding: 1em;
+       
+    }
+    .header{
+        width: 800px;
+        display: flex;
+        // flex-direction: column;
+        position: relative;
+        justify-content: space-between;
+        @include tablet{
+            width: auto;
+            flex-direction: column;
+            gap: 1em;
+            padding: 1em;
+    
+        }
+        @include mobile{
+            width: auto;
+        }
+        
+    }
+    .menu{
+        position: absolute;
+        top: 0.8em;
+
+        @include mobile{
+                position: absolute;
+                top: 4em;
+                right: 1.6em;
+        }
+    }
+}
 
   // .container {
 //     display: flex;
