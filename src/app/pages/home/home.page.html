@@ -17,7 +17,7 @@
       <h1>Kinek ajánljuk szolgáltatásunkat?</h1>
 
       <div>
-        <h3 class="highlighted" style="font-family: var(--ion-font-secondary)">
+        <h3 style="font-family: var(--ion-font-secondary)">
           {{targets}}
         </h3>
       </div>
@@ -38,7 +38,7 @@
               style="cursor: pointer"
               color="danger"
               [routerLink]="['/services']"
-              ><p class="highlighted">+++</p></ion-text
+              ><p >+++</p></ion-text
             >
           </div>
         </div>
@@ -51,11 +51,14 @@
   <ion-card class="container" color="black">
     <div class="content">
       <h1>Rólunk</h1>
-      <div class="">
+      <div class=" about">
         <ion-img class="image" src="../../../assets/images/hands-engineer.jpg">
         </ion-img>
 
         <p>{{about}}</p>
+        <p style="font-style: italic; text-align: end;" >{{ceo}}</p>
+        <p *ngFor="let reference of referencies">{{reference}}</p>
+
       </div>
       <div>
         <ion-button color="primary" size="large" [routerLink]="['/about']">

@@ -44,8 +44,15 @@ export class HomePage implements OnInit{
     },
   ]
 
-  about: string = 'építész csapat, több éves szakmai tapasztalat, lakásfelújítások, koncepcióalkotás, felmérés, tanácsadás terén, Budapest székhely de Dunakanyrban is működik, közepesen hosszú általános bemutatkozás 3 mondat, 1 csapat, 2 tapasztalat, 3 lokáció, '
+  about: string = 'Célunk minél szélesebb körben elérhető építészeti szolgáltatást nyújtani és a szakmai tapasztalatok átadásán keresztül támogatni az ügyfeleket a felelősségteljes pénzügyi döntéshozásban és a kivitelezőkkel folytatott hatékony kommunikációban'
 
+  ceo:string = " Vizi Kata és Bokányi Imre építészek"
+
+  referencies: string[]=[
+    '+ több éves szakmai, hazai és külföldi tapasztalat',
+    '+ lakásfelújítás',
+    '+ családi ház tervezés ( új és bővítés) műszaki felmérés, tanácsadás terén Budapesten és vidéken'
+  ]
   constructor() {}
   ngOnInit(): void {
     

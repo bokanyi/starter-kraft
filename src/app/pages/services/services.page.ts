@@ -14,8 +14,7 @@ export class ServicesPage implements OnInit {
   services: Service[] = [
     {
       title: 'felmérés',
-      description: `A műszaki állapotfelmérés helyszíni bejárás során történik. A helyszíni bejárás alkalmával elvégezzük a különböző épületszerkezetek bontás nélkül végezhető vizsgálatát, a rendelkezésre álló tervlapok áttekintését. Fotódokumentációt és kézi lézeres felmérést készítünk. Bizonyos esetekben statikus szakmérnök bevonását is biztosítjuk.\n+ A felmérés tervdokumentációja egyéni díjszabás alapján készül.
-      `,
+      description: `A műszaki állapotfelmérés helyszíni bejárás során történik. A helyszíni bejárás alkalmával elvégezzük a különböző épületszerkezetek bontás nélkül végezhető vizsgálatát, a rendelkezésre álló tervlapok áttekintését. Fotódokumentációt és kézi lézeres felmérést készítünk. Bizonyos esetekben statikus szakmérnök bevonását is biztosítjuk.\n+ A felmérés tervdokumentációja egyéni díjszabás alapján készül.`,
       details: "A helyszíni felmérés hasznos lehet ingatlan vásárlása előtt. Szakértői segítséggel jelentősen csökkenthető a váratlan kellemetlenségek száma. Azoknak a klienseknek is ajánljuk ezt a szolgáltatást, akik építési tevékenységbe kezdenének. A felmérés a tervezési folyamat egyik nélkülözhetetlen előkészítő lépése."
     },
     {
