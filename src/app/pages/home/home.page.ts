@@ -17,6 +17,14 @@ export class HomePage implements OnInit{
   tel: string = "06 30 843 07 22" 
   instagram: string = "https://www.instagram.com/archicare_hu/"
   address: string =  "Ráday utca 31/B (Kapucsengő/Buzz: 164 - KÖZBEN STÚDIÓ) Budapest IX. kerület 1092"
+  targets: string = "Mindenkinek, aki ingatlanvásárláson gondolkozik, bővíteni szeretné otthonát,  vagy építési telkeket keres, esetleg meglévő házat vásárolna és döntését alátámasztó szakmai segítséget kér."
+  faqs: string[] = [
+    'Ha ingatlant szeretnél vásárolni vagy otthonodat szeretnéd bővíteni, sok kérdés merülhet fel benned.',
+    'Milyen potenciál van az adott ingatlanban beépíthetőség, térkapcsolatok, szerkezetek – tekintetében.',
+    'Ezeknek a kiaknázására milyen beavatkozásokra van szükség, és hogy hogyan zajlik majd az ehhez kapcsolódó hatósági ügyintézés.'  
+  ]
+  invitation: string = "Ha szakértői véleményre van szükséged új otthonod vásárlása előtt, vagy meglévő épület átalakításához, fordulj bizalommal építész csapatunkhoz."
+  
 
   services: Service[] = [
     {

@@ -36,6 +36,11 @@ p{
     }
 }
 
+.highlighted{
+    display: inline;
+    background-color: var(--ion-color-primary);
+}
+
 h1{
     font-size: 6em;
     line-height: 0.8em ;
@@ -165,6 +170,7 @@ ion-card{
 .grid-item{
     padding: 0em 1em;
 }
+
 ion-header{
     // max-width: 800px;
     width: 100vw;
@@ -203,11 +209,12 @@ ion-header{
     .menu{
         position: absolute;
         top: 0.8em;
+        right: .2em;
 
         @include mobile{
                 position: absolute;
                 top: 4em;
-                right: 1.6em;
+                right: 1.2em;
         }
     }
 }

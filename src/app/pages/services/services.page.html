@@ -5,37 +5,48 @@
 
   <ion-card class="container" color="secondary">
 
-    <h1>Mi a szolgáltatás?</h1>
-    <div id="services">
-      
-      <div class="services">
+    <div class="content">
 
+      <h1>Mit nyújtunk?</h1>
+      <div id="services">
         
-        <app-card class="card" *ngFor="let service of services"
-        [title]="service.title"
-        [description]="service.description"
-        [details]="service.details"
-        
-        ></app-card>
-
-        <!-- <ion-card color="inherit" *ngFor="let service of services">
+        <div class="services">
+  
           
-          <ion-text >
-            <h2>
-              {{service.title}}
-            </h2>
-            <p>
-              
-              {{service.description}}
-            </p>
-            <ion-button (click)="openModal()" color="secondary">+</ion-button>
-                <hr>
-                <p *ngIf="modal"> {{service.details}}</p> 
-
-              </ion-text>
-         </ion-card> -->
+          <app-card class="card" *ngFor="let service of services"
+          [title]="service.title"
+          [description]="service.description"
+          [details]="service.details"
+          
+          ></app-card>
+          <p class="highlighted">
+      
+              {{sum}}
+         
+           <ion-text  color="danger">
+             {{slogan}}
+          </ion-text>
+          </p>
   
+          <!-- <ion-card color="inherit" *ngFor="let service of services">
+            
+            <ion-text >
+              <h2>
+                {{service.title}}
+              </h2>
+              <p>
+                
+                {{service.description}}
+              </p>
+              <ion-button (click)="openModal()" color="secondary">+</ion-button>
+                  <hr>
+                  <p *ngIf="modal"> {{service.details}}</p> 
   
+                </ion-text>
+           </ion-card> -->
+    
+    
+        </div>
       </div>
     </div>
   </ion-card>

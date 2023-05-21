@@ -5,14 +5,14 @@
   <p style="white-space: pre-wrap">
     {{ description }}
   </p>
-  <ion-text style="cursor: pointer;" (click)="openModal()" color="danger">
-    <p> {{modal ? '^ ^ ^' : '+++'}}  </p>
-    <!-- <ion-icon *ngIf="modal; else showThis" name="chevron-up-outline"></ion-icon>
+  <ion-text style="cursor: pointer; background-color: var(--ion-color-primary);" (click)="openModal()" color="danger">
+    <p class="highlighted"> {{modal ? '- - -' : '+++'}}  </p>
+    <!-- <ion-icon *ngIf="modal; else showThis" size="large" name="chevron-up-outline"></ion-icon>
     <ng-template #showThis>
-      <ion-icon name="chevron-down-outline"></ion-icon>
+      <ion-icon size="large" name="chevron-down-outline"></ion-icon>
     </ng-template> -->
   </ion-text>
-  <p *ngIf="modal">
+  <p *ngIf="modal" style="white-space: pre-wrap">
     {{ details }}
   </p>
   <hr />

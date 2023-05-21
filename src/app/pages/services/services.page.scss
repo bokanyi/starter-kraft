@@ -11,18 +11,19 @@
 //   }
 
   .services{
-    display: flex;
-    // flex-direction: row;
-    // align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 2em;
+    // display: flex;
+    // // flex-direction: row;
+    // // align-items: center;
+    // justify-content: space-between;
+    // flex-wrap: wrap;
+    // gap: 2em;
     counter-reset: number;
+    padding-left: 4em;
     .card{
-        max-width: 500px;
+        // max-width: 500px;
         // border: 1em solid black;
         // box-shadow: 1em 1em black;
-        flex:  2 1 auto;
+        // flex:  2 1 auto;
         position: relative;
     }
     .card::before{
@@ -32,6 +33,6 @@
       font-weight: 900;
       position: absolute;
       left: -2em;
-      top: 2em;
+      top: 0.4em;
     }
   }
