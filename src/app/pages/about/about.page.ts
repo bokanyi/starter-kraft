@@ -28,7 +28,7 @@ export class AboutPage implements OnInit {
     {
       title: 'elhivatottság',
       description:
-        'Hiszünk benne, hogy munkánkkal értéket teremtünk, hogy szaktudásunkkal elősegítjük a megfelelő körülmények megteremtését a beruházás legoptimáálisabb kimeneteléhez.',
+        'Hiszünk benne, hogy munkánkkal értéket teremtünk, hogy szaktudásunkkal elősegítjük a megfelelő körülmények megteremtését a beruházás legoptimálisabb kimeneteléhez.',
       details: '',
     },
     {
@@ -40,7 +40,7 @@ export class AboutPage implements OnInit {
     {
       title: 'csapatmunka',
       description:
-        'Csapatban dolgozunk, projekttől függően társtervezők bevonásával árjük el, hogy minden ismeretlenre rávilágítsunk a beruházás folyamán.  ',
+        'Csapatban dolgozunk, projekttől függően társtervezők bevonásával érjük el, hogy minden ismeretlenre rávilágítsunk a beruházás folyamán.  ',
       details: '',
     },
   ];
