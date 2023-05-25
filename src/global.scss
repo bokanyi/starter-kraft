@@ -26,6 +26,7 @@ html {
 }
 
 p{
+    white-space: pre-wrap;
     font-size: 2em;
     font-family: var(--ion-font-secondary);  
     @include tablet{
@@ -144,11 +145,12 @@ ion-card{
   }
 
   .content{
-    max-width: 800px;
+    // hyphens: auto;
+    width: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
- 
+    
     margin: auto;
     // align-items: center;
     // min-height: 100vh;

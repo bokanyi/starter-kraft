@@ -1,9 +1,9 @@
 <ion-card color="inherit">
-  <h2>
-    {{ title }}
+  <h2 style="margin-bottom: .5em;">
+    {{title}}
   </h2>
   <p style="white-space: pre-wrap">
-    {{ description }}
+    {{description}}
   </p>
   <ion-text style="cursor: pointer; background-color: var(--ion-color-primary);" (click)="openModal()" color="danger">
     <p style="margin: 1em 0;"> {{modal ? '- - -' : '+++'}}  </p>
@@ -12,8 +12,8 @@
       <ion-icon size="large" name="chevron-down-outline"></ion-icon>
     </ng-template> -->
   </ion-text>
-  <p *ngIf="modal" style="white-space: pre-wrap">
-    {{ details }}
+  <p *ngIf="modal" style="white-space: pre-wrap; font-weight: 300;">
+    {{details}}
   </p>
   <hr />
 </ion-card>

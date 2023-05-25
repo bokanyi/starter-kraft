@@ -9,14 +9,14 @@ import {Service} from '../../models/models';
 })
 export class HomePage implements OnInit{
   logo: string =  'VKV architectural starter kit'
-  title: string =  'hello, mi egy építészeti tanácsadással foglalkozó iroda vagyunk'
+  title: string =  'helló, mi egy építészeti tanácsadással foglalkozó stúdió vagyunk'
   mission: string = 'Missziónk bátorítani az építettőket azzal, hogy minimalizáljuk az ismeretlen részleteket. Így minél több információ birtokában felkészítünk a magabiztos döntéshozásra új ingatlan vásárlásakor, vagy otthonod bővítése során.'
   introduction: string = 'Helyszíni felmérést, műszaki helyzetelemzést és az ingatlan építészeti lehetőségeinek feltárását, építészeti tanácsadást vállalunk + építészeti tervek elkészítését' 
   name: string = "Vizi Kata Veronika"
   email: string = "kataveronikavizi@gmail.com"
   tel: string = "06 30 843 07 22" 
   instagram: string = "https://www.instagram.com/archicare_hu/"
-  address: string =  "Ráday utca 31/B (Kapucsengő/Buzz: 164 - KÖZBEN STÚDIÓ) Budapest IX. kerület 1092"
+  address: string =  `Ráday utca 31/B \n(Kapucsengő/Buzz: 164 - KÖZBEN STÚDIÓ) \nBudapest IX. kerület 1092`
   targets: string = "Mindenkinek, aki ingatlanvásárláson gondolkozik, bővíteni szeretné otthonát,  vagy építési telkeket keres, esetleg meglévő házat vásárolna és döntését alátámasztó szakmai segítséget kér."
   faqs: string[] = [
     'Ha ingatlant szeretnél vásárolni vagy otthonodat szeretnéd bővíteni, sok kérdés merülhet fel benned.',
@@ -53,6 +53,14 @@ export class HomePage implements OnInit{
     '+ lakásfelújítás',
     '+ családi ház tervezés ( új és bővítés) műszaki felmérés, tanácsadás terén Budapesten és vidéken'
   ]
+
+  motivation: string[] = [
+    'Építészként azt tapasztalom, hogy az építkezés előtt álló emberek nem jutnak hozzá alapvető információkhoz, tanácstalanul vágnak bele életük nagy beruházásába.',
+    'Nem tudják felmérni az ingatlan állapotát, hogy milyen munkákat kell elvégezni az otthonuk kialakításához, megvalósítható-e az elképzelésük. Így azt sem, hogy mennyit kell rá költeni.',
+    'Vállalkozásommal azoknak szeretnék szolgáltatást nyújtani, akik ingatlanvásárlás előtt állnak vagy meglévő otthonukat szeretnék átalakítani. Hogyan? Helyszíni szemlével, az ingatlan műszaki állapotának felmérésével és a telek beépíthetőségének, vagy az átalakítási lehetőségek vizsgálatával.',
+    'Egy-egy ilyen szakértői alkalommal segítek kiválasztani az ügyfél igényeinek megfelelő lehetőséget, így az is egyértelművé válik, hogy milyen feladatokból áll a projekt és nagyságrendileg mennyibe fog kerülni. A valós műszaki tartalomra hivatkozva akár milliókat alkudhatunk egy ingatlan vételárából, de ami talán még fontosabb, hogy kivitelezőkkel történő kommunikációban is képviselni tudja érdekeit az építtető, átlátja az előtt álló folyamatot.',
+  ];
+
   constructor() {}
   ngOnInit(): void {
     

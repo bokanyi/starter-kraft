@@ -24,12 +24,12 @@ export class ServicesPage implements OnInit {
     },
     {
       title: 'koncepcióterv',
-      description: ` A koncepcióterv szemléletesen ábrázolja a tulajdonos megvalósítható elképzeléseit a telek vagy a ház valós paramétereibe illesztve. Megmutatja, hogy az ingatlanon milyen átalakítást kell elvégezni ahhoz, hogy az megfeleljen a tulajdonos, vagy vásárló igényeinek, így a projekt várható költségeire is tudunk közelítő becslést adni.`,
+      description: `A koncepcióterv szemléletesen ábrázolja a tulajdonos megvalósítható elképzeléseit a telek vagy a ház valós paramétereibe illesztve. Megmutatja, hogy az ingatlanon milyen átalakítást kell elvégezni ahhoz, hogy az megfeleljen a tulajdonos, vagy vásárló igényeinek, így a projekt várható költségeire is tudunk közelítő becslést adni.`,
       details: "Ajánljuk azoknak, akik több ingatlan közül készülnek választani és szeretnék mérlegelni az opciókat. Segítünk nektek gördülékenyen és hatékonyan összehasonlítani a különböző ingatlanokat, valamint meghatározni a projektetek költségének nagyságrendjét - így magabiztos döntéseket hozhattok.\n+ A koncepcióterv egyéni díjszabás alapján készül, ami tartalmaz egy konzultációt és egy tervmódosítást."
     },
     
   ]
-  sum: string = '  A konzultáció során kiemeljük az ingatlan adottságait, műszaki állapotának hiányosságait, fény derül arra, hogy az elképzeléseiddel azonosak-e az ingatlan műszaki paraméterei és a benne rejlő lehetősgek.Megfelelő szakmai tanácsadást nyújtunk a beruházás optimalizálására, hogy megvalósítsd '
+  sum: string = 'A konzultáció során kiemeljük az ingatlan adottságait, műszaki állapotának hiányosságait, fény derül arra, hogy az elképzeléseiddel azonosak-e az ingatlan műszaki paraméterei és a benne rejlő lehetősgek.Megfelelő szakmai tanácsadást nyújtunk a beruházás optimalizálására, hogy megvalósítsd '
   slogan: string = 'a tökéletes otthonod, a lehetőségeid határain belül – döntsd el te, hogy kompromisszumot hozol, vagy valóra váltod az elképzeléseidet.'
 
   constructor() { }
