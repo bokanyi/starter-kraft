@@ -227,6 +227,24 @@ iframe{
     filter: grayscale(1);
 }
 
+.map{
+    position: relative;
+    filter: hue-rotate(2deg) contrast(2) brightness(1.5);
+  }
+  
+.map::before{
+    content: '';
+    // background-color: var(--ion-color-success);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background-image: linear-gradient(120deg, #eaee44, #33d0ff);
+    background-color:  var(--ion-color-danger);
+    opacity: .6;
+    z-index: 100;
+}
 
 
 /* Basic CSS for apps built with Ionic */
