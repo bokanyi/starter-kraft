@@ -38,6 +38,11 @@ export class AboutPage implements OnInit {
       details: '',
     },
   ];
+  cv: string[] = [
+    '2018-ban építész diplomát szereztem a Műegyetemen, ahol az urbanisztikai kutatások, azon belül is a szociális és energiagazdálkodási kérdések érdekeltek. Az egyetem után szabadtér tervezőként dolgoztam a Város-Teampannon Kft. műhelyében a Vörösmarty tér és a Podmaniczky tér megújításán. Azóta Franciaországban és itthon építészként lakóépületek tervezésèvel és középületek bővítésèvel foglalkoztam.',
+
+    'Fontosnak tartom, hogy fiatal szaktársaimmal láthatóvá váljunk a hazai kulturális színtéren, ezért különböző non-profit programok és kiállítások, foglalkozások szervezésében veszek részt.\nA 2019-ben alakult Közben Stúdióban több fiatal hazai vállalkozó designerrel egy térben dolgozom.'
+  ]
 
   constructor() {}
 
