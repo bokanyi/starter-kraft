@@ -18,7 +18,7 @@ export class HomePage implements OnInit {
   email: string = 'kataveronikavizi@gmail.com';
   tel: string = '06 30 843 07 22';
   instagram: string = 'https://www.instagram.com/archicare_hu/';
-  address: string = `Ráday utca 31/B \n(Kapucsengő/Buzz: 164 - KÖZBEN STÚDIÓ) \nBudapest IX. kerület 1092`;
+  address: string = `Ráday utca 31/B \nKapucsengő/Buzz: 164 - Közben Stúdió \nBudapest IX. kerület 1092`;
   targets: string =
     'Mindenkinek, aki ingatlanvásárláson gondolkozik, bővíteni szeretné otthonát,  vagy építési telkeket keres, esetleg meglévő házat vásárolna és döntését alátámasztó szakmai segítséget kér.';
   faqs: string[] = [
@@ -72,17 +72,17 @@ export class HomePage implements OnInit {
 
   images: Schema[] = [
     {
-      title: 'terasz lefedés engedélyezési tervanyag',
+      title: 'Börzsönyligeti faszerkezetű nyaraló funkcióváltása és bővítése.',
       description: '',
       details: '../../../assets/images/reference01.png',
     },
     {
-      title: 'lakóépület felújítási terve településképi bejelentéshez',
+      title: 'Családi ház a Dunakanyarban.\nTúlépített telken lévő műhelyek bontása, energetikai felújítási javaslat és homlokzati nyílászárócsere.',
       description: '',
       details: '../../../assets/images/reference02.png',
     },
     {
-      title: 'lakásátalakítás',
+      title: 'Budapest,\nbelvárosi 38 m2-es garzon lakás belső térkapcsolatainak átalakítása, közmű vezetékek házon belüli felújítása. ',
       description: '',
       details: '../../../assets/images/reference03.png',
     },

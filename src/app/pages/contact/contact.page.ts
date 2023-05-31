@@ -10,7 +10,7 @@ export class ContactPage implements OnInit {
   email: string = "kataveronikavizi@gmail.com"
   tel: string = "06 30 843 07 22" 
   instagram: string = "https://www.instagram.com/archicare_hu/"
-  address: string =  `Ráday utca 31/B \n(Kapucsengő/Buzz: 164 - KÖZBEN STÚDIÓ) \nBudapest IX. kerület 1092`
+  address: string =  `Ráday utca 31/B \nKapucsengő/Buzz: 164 - Közben Stúdió\nBudapest IX. kerület 1092`
 
   constructor() { }
 

@@ -13,7 +13,7 @@
   </ion-card>
 
   <ion-card class="container" color="secondary">
-    <div  class="content">
+    <div  class="content swiper">
       <!-- <h1>Profil</h1> -->
       <h1>Építészeti tanácsadás</h1>
       <p color="inherit">{{motivation[0]}}</p>
@@ -37,7 +37,10 @@
   <!-- <ion-card class="container" color="secondary">
     <div  class="content swiper">
       <h1>Referenciák</h1>
-
+        <app-swiper
+        [images]="images"
+        >
+        </app-swiper>
 
     </div>
   </ion-card> -->
@@ -114,7 +117,7 @@
         <p>tel: {{tel}}</p>
       </div>
 
-      <a href="{{instagram}}" target="_blank"><p>instagram</p></a>
+      <a href="{{instagram}}" target="_blank"><p>archicare instagram</p></a>
       <div>
         <p>{{address}}</p>
       </div>
