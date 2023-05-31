@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ContactPage implements OnInit {
   name: string = "Vizi Kata Veronika"
   email: string = "kataveronikavizi@gmail.com"
-  tel: string = "06 30 843 07 22" 
+  tel: string = "+36 30 843 07 22" 
   instagram: string = "https://www.instagram.com/archicare_hu/"
   address: string =  `Ráday utca 31/B \nKapucsengő/Buzz: 164 - Közben Stúdió\nBudapest IX. kerület 1092`
 
