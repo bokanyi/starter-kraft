@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Service } from '../../models/models';
+import { Schema } from '../../models/models';
 
 @Component({
   selector: 'app-about',
@@ -12,13 +12,13 @@ export class AboutPage implements OnInit {
     '';
   mission: string =
     'Missziónk bátorítani az építettőket azzal, hogy minimalizáljuk az ismeretlen részleteket. Így minél több információ birtokában felkészítünk a magabiztos döntéshozásra új ingatlan vásárlásakor, vagy otthonod bővítése során.';
-  sideProject: Service = {
+  sideProject: Schema = {
     title: `MÁJUSFA PROJEKT`,
     description: `Kisközösségek aktivitását támogató civil kezdeményezésünk Rádler Luca építésszel: MÁJUSFA PROJEKT `,
     details: 'https://www.instagram.com/majusfa_projekt/',
   };
 
-  values: Service[] = [
+  values: Schema[] = [
     {
       title: 'átláthatóság',
       description:
@@ -39,9 +39,18 @@ export class AboutPage implements OnInit {
     },
   ];
   cv: string[] = [
-    '2018-ban építész diplomát szereztem a Műegyetemen, ahol az urbanisztikai kutatások, azon belül is a szociális és energiagazdálkodási kérdések érdekeltek. Az egyetem után szabadtér tervezőként dolgoztam a Város-Teampannon Kft. műhelyében a Vörösmarty tér és a Podmaniczky tér megújításán. Azóta Franciaországban és itthon építészként lakóépületek tervezésèvel és középületek bővítésèvel foglalkoztam.',
+    '2018-ban építész diplomát szereztem a Műegyetemen, ahol az urbanisztikai kutatások, azon belül is a szociális és energiagazdálkodási kérdések érdekeltek.',
 
-    'Fontosnak tartom, hogy fiatal szaktársaimmal láthatóvá váljunk a hazai kulturális színtéren, ezért különböző non-profit programok és kiállítások, foglalkozások szervezésében veszek részt.\nA 2019-ben alakult Közben Stúdióban több fiatal hazai vállalkozó designerrel egy térben dolgozom.'
+    'Az egyetem után szabadtér tervezőként dolgoztam a Város-Teampannon Kft. műhelyében a Vörösmarty tér és a Podmaniczky tér megújításán. Azóta Franciaországban és itthon építészként lakóépületek tervezésèvel és középületek bővítésèvel foglalkoztam.',
+
+    'Fontosnak tartom, hogy fiatal szaktársaimmal láthatóvá váljunk a hazai kulturális színtéren, ezért különböző non-profit programok és kiállítások, foglalkozások szervezésében veszek részt.',
+
+    'A 2019-ben alakult Közben Stúdióban több fiatal hazai vállalkozó designerrel egy térben dolgozom.,'
+  ]
+
+  cvbi: string[]= [
+    'A Műszaki Egyetemen szereztem építész diplomát, ezután a Fővárosi Önkormányzat Városépítési Főosztályán dolgoztam. Ahol elsajátítottam a településrendezési eszközök ismeretét és mélyebben beleláttam a hatósági folyamatokba.',
+    'Tervezőként többek között a Közti Zrt., Formiconcept Kft. majd a Geon Stúdió irodájában dolgoztam. Majd szabadúszóként lakásátalakítások, családi házak tervezésén dolgoztam.',
   ]
 
   constructor() {}

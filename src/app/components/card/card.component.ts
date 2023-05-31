@@ -6,7 +6,7 @@ import { IonicModule } from '@ionic/angular';
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.scss'],
   // standalone: true,
-  // imports:[IonicModule]
+  // imports:'../prices/'
 })
 
 export class CardComponent  implements OnInit {
@@ -21,6 +21,15 @@ export class CardComponent  implements OnInit {
   @Input() title=""
   @Input() description=""
   @Input() details=""
+  @Input() prices=[{
+    title: "",
+    prices: "",
+    methods: "",
+    documents: "",
+
+  }]
+  // @Input() methods=""
+
   ngOnInit() {}
 
 }

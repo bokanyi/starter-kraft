@@ -14,238 +14,295 @@
 @import "./theme/media.scss";
 
 html {
-    font-family: var(--ion-font-family);  
-    
-  } 
-
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  font-family: var(--ion-font-family);
 }
 
-p{
-    white-space: pre-wrap;
-    font-size: 2em;
-    font-family: var(--ion-font-secondary);  
-    @include tablet{
-        font-size: 1.5em;
-    }  
-    @include mobile{
-        font-size: 1.2em;
-    }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.highlighted{
-    display: inline;
-    background-color: var(--ion-color-primary);
-}
-
-h1{
-    font-size: 6em;
-    line-height: 0.8em ;
-    margin-bottom: 0.8em;
-    @include tablet{
-        font-size: 4em;
-    } 
-    @include mobile{
-        font-size: 3em;
-    }
-   
-}
-
-h2{
-    font-size: 3em;
-    font-weight: 700;
-    @include tablet{
-        font-size: 2em;
-    } 
-}
-
-h3{
-    font-size: 2em;
-    font-weight: 700;
-    @include tablet{
-        font-size: 1.5em;
-    } 
-}
-
-h4{
+p {
+  white-space: pre-wrap;
+  font-size: 2em;
+  font-family: var(--ion-font-secondary);
+  @include tablet {
+    font-size: 1.5em;
+  }
+  @include mobile {
     font-size: 1.2em;
-    font-weight: 700;
-    @include tablet{
-        font-size: 1em;
-    } 
+  }
 }
 
-hr{
-    border: none;
-    border-top: 1px solid black;
-    height: 5px;
-    box-shadow: none;
+.highlighted {
+  display: inline;
+  background-color: var(--ion-color-primary);
+}
+
+h1 {
+  font-size: 6em;
+  line-height: 0.8em;
+  margin-bottom: 0.8em;
+  @include tablet {
+    font-size: 4em;
+  }
+  @include mobile {
+    font-size: 3em;
+  }
+}
+
+h2 {
+  font-size: 3em;
+  font-weight: 700;
+  @include tablet {
+    font-size: 2em;
+  }
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: 700;
+  @include tablet {
+    font-size: 1.5em;
+  }
+}
+
+h4 {
+  font-size: 1.2em;
+  font-weight: 700;
+  @include tablet {
+    font-size: 1em;
+  }
+}
+
+hr {
+  border: none;
+  border-top: 1px solid black;
+  height: 5px;
+  box-shadow: none;
 }
 
 ion-button,
 ion-fab-button {
-    // --background: var(--ion-color-dark);
-    // --background-hover: var(--ion-color-danger);
-    // --background-activated: var(--ion-color-danger);
-    // --background-focused: var(--ion-color-secondary);
+  // --background: var(--ion-color-dark);
+  // --background-hover: var(--ion-color-danger);
+  // --background-activated: var(--ion-color-danger);
+  // --background-focused: var(--ion-color-secondary);
 
-    // --color: blue;
-  
-    --border-radius: 0;
-    // --border-color: #000;
-    // --border-style: solid;
-    // --border-width: 1px;
-    // --border-hover: red ;
-    
-    
-    --box-shadow: none;
-   
-    // --box-shadow: 5px 5px 0px 0px rgb(0, 0, 0);
-  }
+  // --color: blue;
 
-a{
-    text-decoration: none;
-    color: inherit;
+  --border-radius: 0;
+  // --border-color: #000;
+  // --border-style: solid;
+  // --border-width: 1px;
+  // --border-hover: red ;
+
+  --box-shadow: none;
+
+  // --box-shadow: 5px 5px 0px 0px rgb(0, 0, 0);
 }
 
-ion-card{
-    border-radius: 0;
-    box-shadow: none;
-    text-decoration: none;
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
+ion-card {
+  border-radius: 0;
+  box-shadow: none;
+  text-decoration: none;
 }
 
 .container {
-    display: flex;
-    min-height: 100vh;
-    padding: 10em;
-    gap: 2em;
-    // border: none; 
-    // box-shadow: none; 
-    // margin: 0;
-    padding-top: 20em;
-    // &:nth-of-type(1){
-    //     padding-top: 20em;
-    // }
-    // border-radius: 0;
-    @include tablet{
-        padding: 2em;
-        padding-top: 10em;
-        height: auto;
-    }
-    @include mobile{
-        padding: 2em;
-        padding-top: 10em;
-        height: auto;
-    }
+  display: flex;
+  min-height: 100vh;
+  padding: 10em;
+  gap: 2em;
+  // border: none;
+  // box-shadow: none;
+  // margin: 0;
+  padding-top: 20em;
+  // &:nth-of-type(1){
+  //     padding-top: 20em;
+  // }
+  // border-radius: 0;
+  @include tablet {
+    padding: 2em;
+    padding-top: 10em;
+    height: auto;
   }
-
-  .content{
-    // hyphens: auto;
-    width: 800px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-    margin: auto;
-    // align-items: center;
-    // min-height: 100vh;
-    // padding: 10em;
-    gap: 2em;
+  @include mobile {
+    padding: 2em;
+    padding-top: 10em;
+    height: auto;
   }
-
-  .grid{
-    display: grid;
-    grid-template-columns: 40% 60%;
-    h2{
-        
-    }
-    @include mobile{
-        display: flex;
-        flex-direction: column;
-    }
-
-  }
-.grid-item{
-    padding: 0em 1em;
 }
 
-ion-header{
-    // max-width: 800px;
-    width: 100vw;
+.content {
+  // hyphens: auto;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    // height: auto;
+  margin: auto;
+  // align-items: center;
+  // min-height: 100vh;
+  // padding: 10em;
+  gap: 2em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  h2 {
+  }
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.grid-2 {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  h2 {
+  }
+  @include mobile {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.grid-item {
+  text-align: center;
+  margin: auto;
+  @include mobile {
+    text-align: end;
+    margin: 0;
+  }
+}
+
+ion-header {
+  // max-width: 800px;
+  width: 100vw;
+  display: flex;
+  // flex-direction: column;
+  position: relative;
+  justify-content: center;
+
+  // align-items: flex-start;
+  padding: 2em 8.8em;
+
+  @include mobile {
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+  }
+  .header {
+    width: 800px;
     display: flex;
     // flex-direction: column;
     position: relative;
-    justify-content: center;
-    
-    // align-items: flex-start;
-    padding: 2em 8.8em;
- 
-    @include mobile{
-        flex-direction: column;
-        gap: 1em;
-        padding: 1em;
-       
+    justify-content: space-between;
+    @include tablet {
+      width: auto;
+      flex-direction: column;
+      gap: 1em;
+      padding: 1em;
     }
-    .header{
-        width: 800px;
-        display: flex;
-        // flex-direction: column;
-        position: relative;
-        justify-content: space-between;
-        @include tablet{
-            width: auto;
-            flex-direction: column;
-            gap: 1em;
-            padding: 1em;
-    
-        }
-        @include mobile{
-            width: auto;
-        }
-        
+    @include mobile {
+      width: auto;
     }
-    .menu{
-        position: absolute;
-        top: 0.8em;
-        right: .2em;
-
-        @include mobile{
-                position: absolute;
-                top: 4em;
-                right: 1.2em;
-        }
-    }
-}
-
-iframe{
-    width: 100%;
-    filter: grayscale(1);
-}
-
-.map{
-    position: relative;
-    filter: hue-rotate(2deg) contrast(2) brightness(1.5);
   }
-  
-.map::before{
-    content: '';
-    // background-color: var(--ion-color-success);
+  .menu {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    // background-image: linear-gradient(120deg, #eaee44, #33d0ff);
-    background-color:  var(--ion-color-danger);
-    opacity: .6;
-    z-index: 100;
+    top: 0.8em;
+    right: 0.2em;
+
+    @include mobile {
+      position: absolute;
+      top: 0.4em;
+      right: 1.2em;
+    }
+  }
 }
 
+iframe {
+  width: 100%;
+  filter: grayscale(1);
+}
+
+.map {
+  position: relative;
+  filter: hue-rotate(2deg) contrast(2) brightness(1.5);
+}
+
+.map::before {
+  content: "";
+  // background-color: var(--ion-color-success);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  // background-image: linear-gradient(120deg, #eaee44, #33d0ff);
+  background-color: var(--ion-color-danger);
+  opacity: 0.6;
+  z-index: 100;
+}
+.services {
+  // display: flex;
+  // // flex-direction: row;
+  // // align-items: center;
+  // justify-content: space-between;
+  // flex-wrap: wrap;
+  // gap: 2em;
+  counter-reset: number;
+  padding-left: 4em;
+  .card {
+    // max-width: 500px;
+    // border: 1em solid black;
+    // box-shadow: 1em 1em black;
+    // flex:  2 1 auto;
+    position: relative;
+  }
+  .card::before {
+    counter-increment: number;
+    content: "0" counter(number);
+    font-size: 2em;
+    font-weight: 900;
+    position: absolute;
+    left: -2em;
+    top: 0.4em;
+   
+  }
+//   @include mobile {
+//     // display: none;
+//     // position: absolute;
+//     padding: 0em;
+//     padding-right: 4em;
+//     right: -2em;
+//     top: 0.4em;
+//     .card::before {
+//         counter-increment: number;
+//         content: "0" counter(number);
+//         font-size: 2em;
+//         font-weight: 900;
+//         position: absolute;
+//         right: -2em;
+//         top: 0.4em;
+       
+//       }
+//   }
+  
+}
+
+.prices {
+  p {
+    margin: 1em 0;
+  }
+}
 
 /* Basic CSS for apps built with Ionic */
 // @import "@ionic/angular/css/normalize.css";

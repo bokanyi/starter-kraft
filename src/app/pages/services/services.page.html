@@ -9,24 +9,22 @@
 
       <h1>Mit nyújtunk?</h1>
       <div id="services">
-        
+    
+        <p style="margin-bottom: 2em;">
+        {{sum}}<ion-text style="font-weight: 900;">{{slogan}}
+      </ion-text>
+      </p>
+
         <div class="services">
-  
           
           <app-card class="card" *ngFor="let service of services"
           [title]="service.title"
           [description]="service.description"
           [details]="service.details"
+          [prices]="service.prices"
           
           ></app-card>
-          <p >
-      
-              {{sum}}
          
-           <ion-text style="font-weight: 900;">
-             {{slogan}}
-          </ion-text>
-          </p>
   
           <!-- <ion-card color="inherit" *ngFor="let service of services">
             
