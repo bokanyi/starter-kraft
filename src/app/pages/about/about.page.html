@@ -6,19 +6,57 @@
         <p>{{introduction}}</p>
         <p>{{mission}}</p>
       </ion-text>
+      <div class="grid">
+        <div>
+          <ion-img
+            class="image grid-item"
+            src="../../../assets/images/vkv_nemszerk.png"
+          >
+          </ion-img>
+        </div>
 
-      <div class="values">
+        <ion-text class="grid-item" >
+          <h2>Vizi Kata Veronika</h2>
+          <p>építészmérnök</p>
+        </ion-text>
+      </div>
+      <p color="inherit" *ngFor="let senteces of cv">{{senteces}}</p>
+      <div class="animated">
+        <p>{{sideProject.description}}</p>
+        <a href="https://www.instagram.com/majusfa_projekt/" target="_blank">
+          <p>{{sideProject.details}}</p>
+        </a>
+      </div>
+      <div class="grid-2">
+        <ion-text class="grid-item" >
+          <h2>Bokányi Imre</h2>
+          <p>építészmérnök</p>
+        </ion-text>
+        <div>
+          <ion-img
+            class="image grid-item"
+            src="../../../assets/images/bia_szerk.png"
+          >
+          </ion-img>
+        </div>
+
+      </div>
+      <p color="inherit" *ngFor="let senteces of cvbi">{{senteces}}</p>
+    </div>
+
+      <!-- <div class="values">
         <ion-card color="inherit" *ngFor="let value of values">
           <ion-text>
             <h2>{{value.title}}</h2>
             <p>{{value.description}}</p>
           </ion-text>
         </ion-card>
-      </div>
-    </div>
+      </div> -->
+
+  
   </ion-card>
 
-  <ion-card class="container" color="secondary">
+  <!-- <ion-card class="container" color="secondary">
     <div class="content">
       <div class="grid">
         <div>
@@ -60,5 +98,6 @@
   </ion-card>
   <ion-card class="container" color="secondary">
     <div class="content"></div>
-  </ion-card>
+  </ion-card> -->
+
 </ion-content>
